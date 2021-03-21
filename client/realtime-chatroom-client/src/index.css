@@ -1,0 +1,92 @@
+:root {
+  --color-primary: #2f4858;
+  --color-secondary: #9AB0A6;
+  --color-accent: #2F9874;
+
+  --gradient:  rgba(47,152,116,1) 0%, 
+               rgba(2,137,122,1) 20%, 
+               rgba(0,121,123,1) 40%, 
+               rgba(15,104,117,1) 60%, 
+               rgba(37,88,105,1) 80%, 
+               rgba(47,72,88,1) 100%;
+
+  --font-size: 1rem;
+  --font-color: white;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var( --font-size );
+  color: var( --font-color );
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  background: var( --color-primary );
+  background: linear-gradient(45deg, var( --gradient ) );
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ChatBodyContainer {
+  background: var( --color-primary );
+  height: 90%;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  box-shadow: 0px 0px 10px 0px #000000;
+  padding-top: 2%;
+  overflow: scroll;
+}
+
+.InputContainer {
+  background: var( --color-primary );
+  height: 10%;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.SendButton {
+  background-color: var( --color-accent );
+  color: white;
+}
+
+.RoomInfoContainer {
+  background: var( --color-secondary );
+  height: 100%;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 10px 0px #000000;
+  padding-left: 2%;
+  padding-top: 2%;
+  text-align: center;
+}
+
+.MessageSent {
+  color: black;
+  background-color: var( --color-secondary );
+  border-color: var( --color-accent );
+  text-align: right;
+}
+
+.MessageRecieved {
+  color: black;
+  background-color: var( --color-accent );
+  border-color: var( --color-secondary );
+}
+
+.ClientID {
+  color: white;
+  font-size: 0.7rem;
+  margin-bottom: 1%;
+  font-weight: var( --font-weight-light );
+}
