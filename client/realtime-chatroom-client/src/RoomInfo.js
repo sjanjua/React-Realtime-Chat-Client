@@ -18,7 +18,7 @@ export const RoomInfo = ( props ) => {
                     <div className='mt-3'>
                         {
                             users.map( ( user, index ) => {
-                                return <p className='' style={{ color: 'black' }}> { user } </p>
+                                return <p key={ index } className='' style={{ color: 'black' }}> { user } </p>
                             })
                         }
                     </div>
